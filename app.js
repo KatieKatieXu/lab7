@@ -36,6 +36,7 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
+app.get('/min', index.viewMin);
 app.get('/', index.view);
 app.get('/project/:id', project.view);
 // Example route
